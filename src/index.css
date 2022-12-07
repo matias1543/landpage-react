@@ -526,7 +526,7 @@ footer .utilities a {
       display: none;
   }
 
-  header nav ul {
+  header ul {
     display: block;
   }
 
@@ -550,7 +550,7 @@ footer .utilities a {
     width: 100%;
   }
 
-  a {
+  header a {
     display: block;
     padding: 10px 100px;
     text-decoration: none;
@@ -558,13 +558,14 @@ footer .utilities a {
     text-transform: uppercase;
     font-weight: bold;
   }
-  a:hover {
+  header a:hover {
     color: var(--gray-main);
   }
   
   .menuNav li:first-child {
     margin-top: 2rem;
   }
+
 }
 
 @media (max-width: 947px ) {
