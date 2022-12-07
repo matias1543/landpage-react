@@ -72,6 +72,7 @@ header .max nav a {
   text-decoration: none;
   color: var(--gray-main);
   margin: 0 15px;
+  cursor: pointer;
 }
 
 header .max nav a:hover {
@@ -557,6 +558,7 @@ footer .utilities a {
     color: var(--blue-main);
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
   }
   header a:hover {
     color: var(--gray-main);

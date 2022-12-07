@@ -1,9 +1,10 @@
+import { forwardRef } from 'react';
 import WorkImg from '../assets/imgs/work.png'
 
-export const Nosotros = () => {
+export const Nosotros = forwardRef((props, ref) => {
     return (
         <>
-            <div id="container">
+            <div ref={ref} id="container">
                 <div className="img-landing"></div>
             </div>
 
@@ -24,4 +25,4 @@ export const Nosotros = () => {
             </div>
         </>
     )
-}
+});

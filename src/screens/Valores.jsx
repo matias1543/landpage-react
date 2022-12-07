@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import RectangleImg from "../assets/imgs/rectangle.png";
 import BulbImg from "../assets/imgs/bulb.png";
 import CreativityImg from "../assets/imgs/values/creativity.png";
@@ -7,9 +8,9 @@ import IntegrityImg from "../assets/imgs/values/integrity.png";
 import ProfessionalImg from "../assets/imgs/values/professional.png";
 import BalanceImg from "../assets/imgs/values/balance.png";
 
-export const Valores = () => {
+export const Valores = forwardRef((props, ref) => {
     return (
-        <div id="container-one">
+        <div ref={ref} id="container-one">
             <section id="values">
                 <img src={RectangleImg} className="rectangle" alt="rectangle" />
                 <img src={BulbImg} className="bulb" alt="bulb" />
@@ -50,4 +51,4 @@ export const Valores = () => {
             </section>
         </div>
     )
-}
+})

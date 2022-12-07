@@ -1,9 +1,14 @@
 import { NavBar, Footer } from '../components'
 
-export const AppLayout = ({ children }) => {
+export const AppLayout = ({ children, nosotrosRef, valoresRef, serviciosRef, contactoRef }) => {
     return (
         <>
-            <NavBar />
+            <NavBar 
+                nosotrosRef={nosotrosRef}
+                valoresRef={valoresRef}
+                serviciosRef={serviciosRef}
+                contactoRef={contactoRef}
+            />
                 {children }
             <Footer />
         </>

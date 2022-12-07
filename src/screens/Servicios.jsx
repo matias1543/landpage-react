@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, forwardRef } from 'react'
 import { Servicio } from '../components/Servicio';
 import { servicios } from '../data/servicios';
 
-export const Servicios = () => {
+export const Servicios = forwardRef((props, ref) => {
 
     const [showUp, setShowUp] = useState({ serviceOneShow: false, serviceTwoShow: false, serviceThreeShow: false });
 
@@ -21,7 +21,7 @@ export const Servicios = () => {
     }
 
     return (
-        <div id="container">
+        <div ref={ref} id="container">
             <section id="servicios">
                 <h2>Servicios</h2>
                 <div className="max">
@@ -62,4 +62,4 @@ export const Servicios = () => {
             </section>
         </div>
     )
-}
+});
