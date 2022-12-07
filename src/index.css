@@ -185,17 +185,18 @@ header ul {
   background-color: var(--white-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 70px;
+  padding: 20px;
 }
 
 #values .box h1 {
-  padding: 50px;
+  padding: 20px 20px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
 }
 
 #values .box p {
-  padding: 20px 50px;
+  padding: 20px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -249,6 +250,7 @@ header ul {
   background-color: var(--white-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 70px;
+  padding: 20px;
   /* margin-top: 100px; */
 }
 
@@ -567,6 +569,15 @@ footer .utilities a {
   .menuNav li:first-child {
     margin-top: 2rem;
   }
+
+  #empty .box {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .testimonials {
+    margin-top: 150px;
+  } 
 
 }
 
