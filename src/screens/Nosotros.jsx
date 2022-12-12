@@ -5,10 +5,6 @@ import BgBlueImg from '../assets/imgs/bg-blue.png'
 export const Nosotros = forwardRef((props, ref) => {
     return (
         <>
-            {/* <div ref={ref} id="container">
-                <div className="img-landing"></div>
-            </div> */}
-
             <div id="container">
                 <section id="landing">
                     <img src={BgBlueImg} alt="bg-blue" className='img-landing' />

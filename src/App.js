@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { AppLayout } from './layout/AppLayout';
-import { Nosotros, Valores, Bloque, Testimonios, Servicios, Contacto } from './screens';
+import { Nosotros, Valores, Testimonioss, Bloque, Testimonios, Servicios, Contacto } from './screens';
 
 const App = () => {
   // Scroll
@@ -18,6 +18,7 @@ const App = () => {
       >
         <Nosotros ref={nosotrosRef} />
         <Valores ref={valoresRef} />
+        <Testimonioss />
         <Bloque />
         <Testimonios />
         <Servicios  ref={serviciosRef}/>

@@ -15,13 +15,13 @@ export const Testimonios = () => {
         
                     <div className="group _testimonials -text ">
                         <div className="card _testimonials">
-                        <img src={AvatarOne} alt="portrait Anisha" className="img _testimonials" />
-                        <h3 className="title _testimonials -card">
-                            Ella Balinska
-                        </h3>
-                        <p className="copy _testimonials -card">
-                            “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam id facere suscipit quae dicta recusandae voluptas minima cumque, pariatur animi velit omnis quasi quas enim asperiores hic, sunt nisi consequatur!”
-                        </p>
+                            <img src={AvatarOne} alt="portrait Anisha" className="img _testimonials" />
+                            <h3 className="title _testimonials -card">
+                                Ella Balinska
+                            </h3>
+                            <p className="copy _testimonials -card">
+                                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam id facere suscipit quae dicta recusandae voluptas minima cumque, pariatur animi velit omnis quasi quas enim asperiores hic, sunt nisi consequatur!”
+                            </p>
                         </div>
                         <div className="card _testimonials">
                         <img src={AvatarTwo} alt="portrait Ali" className="img _testimonials" />
