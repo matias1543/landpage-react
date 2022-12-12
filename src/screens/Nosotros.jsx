@@ -1,15 +1,17 @@
 import { forwardRef } from 'react';
 import WorkImg from '../assets/imgs/work.png'
+import BgBlueImg from '../assets/imgs/bg-blue.png'
 
 export const Nosotros = forwardRef((props, ref) => {
     return (
         <>
-            <div ref={ref} id="container">
+            {/* <div ref={ref} id="container">
                 <div className="img-landing"></div>
-            </div>
+            </div> */}
 
             <div id="container">
                 <section id="landing">
+                    <img src={BgBlueImg} alt="bg-blue" className='img-landing' />
                     <div className="max">
                         <div className="descrip">
                             <h1>Nosotros:</h1>
