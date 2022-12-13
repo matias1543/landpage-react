@@ -1,26 +1,31 @@
+import MariaImg from '../assets/imgs/avatars/avatar_maria.png';
+import JorgeImg from '../assets/imgs/avatars/avatar_jorge.png'
+import AngieImg from '../assets/imgs/avatars/avatar_angie.png';
+import RobertoImg from '../assets/imgs/avatars/avatar_roberto.png';
+
 export const testimonios = [
     {
         name: "Maria Cobos",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem ccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.",
         text: "“totam rem aperiam, eaque ipsa.”",
-        url: "../assets/imgs/avatars/avatar-maria.png"
+        img: MariaImg
     },
     {
         name: "Jorge Villalobos",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem ccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.",
         text: " “totam rem aperiam, eaque ipsa.”",
-        url: "../assets/imgs/avatars/avatar_jorge.png"
+        img: JorgeImg
     },
     {
         name: "Angie Verona",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem ccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.",
         text: " “totam rem aperiam, eaque ipsa.”",
-        url: "../assets/imgs/avatars/avatar_angie.png"
+        img: AngieImg
     },
     {
         name: "Roberto Giordano",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem ccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.",
         text: " “totam rem aperiam, eaque ipsa.”",
-        url: "../assets/imgs/avatars/avatar_roberto.png"
+        img: RobertoImg
     }
 ];

@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --gray-main: #A6A6A6;
   --blue-main:  #024687;
@@ -240,7 +243,7 @@ header ul {
 
 #testimonioss {
   position: relative;
-  height: 60rem;
+  height: 48rem;
   margin-top: 90px;
   background: radial-gradient(86.77% 115.05% at -3.89% 4.67%, #3ED9FE 28.13%, #024687 81.25%);
   /* background-image: url("./assets/imgs/rectangle-blue.png"); */
@@ -255,7 +258,8 @@ header ul {
 #testimonioss .max .grupo_testimonios {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 70px;
+  width: 90%;
 }
 
 #testimonioss .max .card_testimonio {

@@ -20,9 +20,9 @@ const App = () => {
         <Valores ref={valoresRef} />
         <Testimonioss />
         <Bloque />
-        <Testimonios />
+        {/* <Testimonios />
         <Servicios  ref={serviciosRef}/>
-        <Contacto ref={contactoRef} />
+        <Contacto ref={contactoRef} /> */}
       </AppLayout>
   )
 }
