@@ -169,6 +169,7 @@ header ul {
 #values .rectangle {
   position: absolute;
   width: 100%;
+  height: 158rem;
   z-index: 0;
   margin-top: 180px;
 }
@@ -246,7 +247,6 @@ header ul {
   height: 48rem;
   margin-top: 90px;
   background: radial-gradient(86.77% 115.05% at -3.89% 4.67%, #3ED9FE 28.13%, #024687 81.25%);
-  /* background-image: url("./assets/imgs/rectangle-blue.png"); */
 }
 
 #testimonioss h1 {
@@ -292,6 +292,7 @@ header ul {
   font-size: 1rem;
   padding: 10px 0;
   text-indent: 1.5em;
+  text-align: justify;
 }
 
 #testimonioss .max .card_testimonio .content_testimonio .text_two {
@@ -299,21 +300,222 @@ header ul {
   font-weight: 800; 
   font-size: 1rem;
 } 
-
-
-
-/* #testimonioss .max .grupo_testimonios .card_testimonio img {
-  border-radius: 70px;
-} */
-
-
-
-
-
 /* Testimonioss end */
 
+/* Servicioss start */
+#servicioss {
+  position: relative;
+}
+
+#servicioss h1 {
+  color: var(--blue-main);
+  font-size: 4rem;
+  padding: 60px 40px;
+}
+
+#servicioss .grupo_servicios {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#servicioss .descrip_right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+#servicioss .descrip_left {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+#servicioss .box {
+  width: 90%;
+  height: 356px;
+  background-color: var(--white-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  padding: 20px;
+  display: flex;
+}
+
+#servicioss .descrip_right .box .text {
+  width: 40%;
+  text-align: justify;
+  padding: 20px 50px;
+}
+
+#servicioss .descrip_left .box .text {
+  width: 40%;
+  text-align: justify;
+  padding: 20px 50px;
+  margin-left: 120px;
+}
+
+#servicioss .box .text h2 {
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+
+#servicioss .box .text p {
+  font-size: 1.2rem;
+}
+
+#servicioss .descrip_right .box .img {
+  text-align: right;
+  width: 50%;
+  height: 100%;
+}
+
+#servicioss .descrip_left .box .img {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+#servicioss .box .img img {
+  position: relative;
+  border-radius: 70px;
+  filter: drop-shadow(5px 7px 10px #3EC4FE);
+  top: -150px;
+  /* width: 70%; */
+  width: 410px;
+  height: 344px;
+}
+
+/* Servicioss end */
+
+/* Contacto star */
+#contacto h2 {
+  color: var(--blue-main);
+  font-size: 4rem;
+  padding: 0 40px 60px 40px;
+  /* font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--blue-main); */
+}
+
+#contacto .max {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+#contacto .datos {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#contacto .datos input {
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+#contacto .max .datos label {
+  display: block;
+  font-weight: bold;
+  text-indent: 0.5em;
+}
+
+#contacto .mensaje {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#contacto .mensaje textarea {
+  width: 100%;
+  height: 45%;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#contacto .max .mensaje label {
+  display: block;
+  font-weight: bold;
+  text-indent: 0.5em;
+}
+
+#contacto .mensaje button {
+  margin-top: 5px;
+  background-color: var(--blue-main);
+  width: 50%;
+  margin-left: auto;
+  margin-top: 35px;
+  border-radius: 10px;
+  padding: 15px 0;
+}
+
+/* #contacto .datos {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0 0 0 200px;
+  width: 50%;
+}
+
+#contacto .datos input {
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+#contacto .mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0 0 0 200px;
+  width: 50%;
+}
+
+
+#contacto .mensaje textarea {
+  width: 80%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 5px;
+
+}
+
+#contacto .mensaje button {
+  margin-top: 5px;
+  background-color: var(--blue-main);
+  width: 50%;
+}
+
+#contacto .max .mensaje label {
+  display: block;
+  font-weight: bold;
+}
+
+#contacto .max .datos label {
+  display: block;
+  font-weight: bold;
+} */
+/* Contacto end */
+
 /* Empty star */
-#empty .max {
+/* #empty .max {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -351,70 +553,11 @@ header ul {
   font-size: 14px;
   line-height: 16px;
   text-align: justify;
-}
+} */
 /* Empty star */
 
-/* Contacto star */
-#contacto h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#contacto .max {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 10px 0;
-}
-
-#contacto .datos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-#contacto .datos input {
-  width: 50%;
-  height: 30px;
-  margin: 5px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-
-#contacto .mensaje {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-
-#contacto .mensaje textarea {
-  width: 50%;
-  height: 100%;
-  margin: 5px;
-  border-radius: 5px;
-
-}
-
-#contacto .mensaje button {
-  margin-top: 5px;
-  background-color: var(--blue-main);
-  width: 50%;
-}
-
-#contacto label {
-  display: block;
-  font-weight: bold;
-}
-/* Contacto end */
-
 /* Servicios star */
-#servicios { 
+/* #servicios { 
   position: relative;
 }
 
@@ -467,11 +610,11 @@ header ul {
   font-size: 1.1rem;
   text-align: left;
   
-}
+} */
 /* Servicio end */
 
 /* Testimonios star */
-.testimonials {
+/* .testimonials {
   position: relative;
   overflow-x: hidden;
   margin-top: 40px;
@@ -531,7 +674,7 @@ header ul {
 
 .circle._slider:last-child {
   margin: 0;
-}
+} */
 /* Testimonios end */
 
 /* Footer star */

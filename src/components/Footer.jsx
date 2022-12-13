@@ -11,7 +11,7 @@ export const Footer = () => {
         <footer>
             <div className="max">
                 <div className="socials">
-                    <h3>Logo</h3>
+                    <h3>Visivia</h3>
                     <div className="network">
                         <a href="#"><img src={FacebookImg} alt="facebook" /></a>
                         <a href="#"><img src={InstagramImg} alt="instagram" /></a>

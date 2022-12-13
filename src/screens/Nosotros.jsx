@@ -4,23 +4,21 @@ import BgBlueImg from '../assets/imgs/bg-blue.png'
 
 export const Nosotros = forwardRef((props, ref) => {
     return (
-        <>
-            <div id="container">
-                <section id="landing">
-                    <img src={BgBlueImg} alt="bg-blue" className='img-landing' />
-                    <div className="max">
-                        <div className="descrip">
-                            <h1>Nosotros:</h1>
-                            <h2>Quienes Somos?</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur animi temporibus eaque iusto repellendus quas quidem ratione cupiditate quibusdam nesciunt modi facere, inventore ea ab esse recusandae dolorem at!</p> 
-                            <button>Mas Sobre Nosotros</button>
-                        </div>
-                        <div className="intro">
-                            <img src={WorkImg} alt="intro" />
-                        </div>
+        <div id="container" ref={ref}>
+            <section id="landing">
+                <img src={BgBlueImg} alt="bg-blue" className='img-landing' />
+                <div className="max">
+                    <div className="descrip">
+                        <h1>Nosotros:</h1>
+                        <h2>Quienes Somos?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur animi temporibus eaque iusto repellendus quas quidem ratione cupiditate quibusdam nesciunt modi facere, inventore ea ab esse recusandae dolorem at!</p> 
+                        <button>Mas Sobre Nosotros</button>
                     </div>
-                </section>
-            </div>
-        </>
+                    <div className="intro">
+                        <img src={WorkImg} alt="intro" />
+                    </div>
+                </div>
+            </section>
+        </div>
     )
 });

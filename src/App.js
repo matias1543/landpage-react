@@ -1,28 +1,27 @@
 import React, { useRef } from 'react'
 import { AppLayout } from './layout/AppLayout';
-import { Nosotros, Valores, Testimonioss, Bloque, Testimonios, Servicios, Contacto } from './screens';
+import { Nosotros, Valores, Testimonioss, Servicioss, Contacto /*Bloque, Testimonios, Servicios  */ } from './screens';
 
 const App = () => {
   // Scroll
   const nosotrosRef = useRef(null);
-  const valoresRef = useRef(null);
   const serviciosRef = useRef(null);
   const contactoRef = useRef(null);
 
   return (
       <AppLayout 
         nosotrosRef={nosotrosRef}
-        valoresRef={valoresRef}
         serviciosRef={serviciosRef}
         contactoRef={contactoRef}
       >
         <Nosotros ref={nosotrosRef} />
-        <Valores ref={valoresRef} />
+        <Valores />
         <Testimonioss />
-        <Bloque />
-        {/* <Testimonios />
-        <Servicios  ref={serviciosRef}/>
-        <Contacto ref={contactoRef} /> */}
+        <Servicioss ref={serviciosRef} />
+        {/* <Bloque /> */}
+        {/* <Testimonios /> */}
+        {/* <Servicios  ref={serviciosRef}/> */}
+        <Contacto ref={contactoRef} />
       </AppLayout>
   )
 }
