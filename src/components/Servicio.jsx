@@ -1,26 +1,37 @@
-export const Servicio = ({ show, service }) => {
-    if(show) {
-        return (
-            <div id="container">
-                <section id="servicio">
-                    <div className="max">
-                        <div className="group">
-                            <h3>{service.type[0].title}</h3>
-                            <p>{service.type[0].info}</p>
-                        </div>
-                        <div className="group">
-                            <h3>{service.type[1].title}</h3>
-                            <p>{service.type[1].info}</p>
-                        </div>
-                        {service.type.length > 2 &&
-                            <div className="group">
-                                <h3>{service.type[2].title}</h3>
-                                <p>{service.type[2].info}</p>
-                            </div>
-                        }
-                    </div>
-                </section>
+import ServiceOneImg from '../assets/imgs/services/service_one.png'
+
+export const Servicio = ({ position }) => {
+    return (
+        <div className={`descrip_${position}`}>
+            <div className="box">
+                { 
+                    position == 'right' 
+                        ? (
+                            <>
+                                <div className="text">
+                                    <h2>Prensa</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend ligula blandit malesuada bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tincidunt metus id sollicitudin sagittis.</p>
+                                </div>
+                                <div className="img">
+                                    <img src={ServiceOneImg} alt="service_one" />
+                                </div>
+                            </>
+                        )
+                        : (
+                            <>
+                                <div className="img">
+                                    <img src={ServiceOneImg} alt="service_one" />
+                                </div>
+                                <div className="text">
+                                    <h2>Prensa</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend ligula blandit malesuada bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tincidunt metus id sollicitudin sagittis.</p>
+                                </div>
+                            </>
+                        )
+
+                }
+
             </div>
-        )
-    }
+        </div>
+    )
 }
