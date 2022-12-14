@@ -6,7 +6,7 @@ import PinterestImg from "../assets/imgs/network/icon-pinterest.svg"
 import TwitterImg from "../assets/imgs/network/icon-twitter.svg"
 import YoutubeImg from "../assets/imgs/network/icon-youtube.svg"
 
-export const Footer = () => {
+export const Footer = ({ nosotrosRef, serviciosRef, contactoRef }) => {
     return (
         <footer>
             <div className="max">
@@ -21,10 +21,10 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="utilities">
-                    <a href="#">Nosotros</a>
-                    <a href="#">Servicios</a>
+                    <a onClick={() => nosotrosRef.current?.scrollIntoView({ behavior: "smooth" })}>Nosotros</a>
+                    <a onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Servicios</a>
                     <a href="#">Clientes</a>
-                    <a href="#">Contacto</a>
+                    <a onClick={() => contactoRef.current?.scrollIntoView({ behavior: "smooth" })}>Contacto</a>
                 </div>
             </div>
         </footer>

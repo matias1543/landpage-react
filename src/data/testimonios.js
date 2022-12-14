@@ -1,7 +1,7 @@
 import MariaImg from '../assets/imgs/avatars/avatar_maria.png';
-import JorgeImg from '../assets/imgs/avatars/avatar_jorge.png'
+import JorgeImg from '../assets/imgs/avatars/avatar_jorge.jpg'
 import AngieImg from '../assets/imgs/avatars/avatar_angie.png';
-import RobertoImg from '../assets/imgs/avatars/avatar_roberto.png';
+import RobertoImg from '../assets/imgs/avatars/avatar_roberto.jpg';
 
 export const testimonios = [
     {

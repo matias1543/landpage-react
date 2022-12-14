@@ -9,7 +9,11 @@ export const AppLayout = ({ children, nosotrosRef, serviciosRef, contactoRef }) 
                 contactoRef={contactoRef}
             />
                 {children }
-            <Footer />
+            <Footer 
+                nosotrosRef={nosotrosRef}
+                serviciosRef={serviciosRef}
+                contactoRef={contactoRef}
+            />
         </>
     )
 }
