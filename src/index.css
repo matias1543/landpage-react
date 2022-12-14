@@ -537,6 +537,25 @@ footer .utilities a {
 }
 /* Footer end */
 
+@media (max-width: 412px) {
+  #landing .max {
+    height: 100rem;
+  }
+
+  #clientes {
+    height: 50rem;
+  }
+
+  #clientes .max .grupo_clientes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    bottom: 55px;
+    right: 5px;
+    width: 90%;
+  }
+}
+
 
 @media (max-width: 774px) {
   header i{
