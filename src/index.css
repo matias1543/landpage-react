@@ -259,29 +259,28 @@ header ul {
 }
 /* values end */
 
-/* Testimonioss start */
-
-#testimonioss {
+/* Clientes start */
+#clientes {
   position: relative;
   height: 48rem;
   margin-top: 90px;
   background: radial-gradient(86.77% 115.05% at -3.89% 4.67%, #3ED9FE 28.13%, #024687 81.25%);
 }
 
-#testimonioss h1 {
+#clientes h1 {
   color: var(--white-main);
   font-size: 4rem;
   padding: 60px 40px;
 }
 
-#testimonioss .max .grupo_testimonios {
+#clientes .max .grupo_clientes {
   display: flex;
   flex-direction: row;
   margin-left: 70px;
   width: 90%;
 }
 
-#testimonioss .max .card_testimonio {
+#clientes .max .card_cliente {
   display: flex;
   flex-direction: column;
   width: 312px;
@@ -292,7 +291,7 @@ header ul {
   background: no-repeat;
 }
 
-#testimonioss .max .card_testimonio .content_testimonio {
+#clientes .max .card_cliente .content_cliente {
   position: relative;
   background-color: #FFFFFF;
   flex-direction: column;
@@ -302,12 +301,12 @@ header ul {
   padding: 30px;
 } 
 
-#testimonioss .max .card_testimonio .content_testimonio h2 {
+#clientes .max .card_cliente .content_cliente h2 {
   color: var(--blue-main);
   font-size: 1.8rem;
 } 
 
-#testimonioss .max .card_testimonio .content_testimonio .text_one {
+#clientes .max .card_cliente .content_cliente .text_one {
   color: var(--black-main);
   font-size: 1rem;
   padding: 10px 0;
@@ -315,32 +314,32 @@ header ul {
   text-align: justify;
 }
 
-#testimonioss .max .card_testimonio .content_testimonio .text_two {
+#clientes .max .card_cliente .content_cliente .text_two {
   color: var(--light-blue-main);
   font-weight: 800; 
   font-size: 1rem;
 } 
-/* Testimonioss end */
+/* clientes end */
 
-/* Servicioss start */
-#servicioss {
+/* servicios start */
+#servicios {
   position: relative;
 }
 
-#servicioss h1 {
+#servicios h1 {
   color: var(--blue-main);
   font-size: 4rem;
   padding: 60px 40px;
 }
 
-#servicioss .grupo_servicios {
+#servicios .grupo_servicios {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-#servicioss .descrip_right {
+#servicios .descrip_right {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -348,7 +347,7 @@ header ul {
   margin-bottom: 180px;
 }
 
-#servicioss .descrip_left {
+#servicios .descrip_left {
   position: relative;
   display: flex;
   justify-content: start;
@@ -356,7 +355,7 @@ header ul {
   margin-bottom: 180px;
 }
 
-#servicioss .box {
+#servicios .box {
   width: 90%;
   height: 356px;
   background-color: var(--white-main);
@@ -366,41 +365,41 @@ header ul {
   display: flex;
 }
 
-#servicioss .descrip_right .box .text {
+#servicios .descrip_right .box .text {
   width: 40%;
   text-align: justify;
   padding: 20px 50px;
 }
 
-#servicioss .descrip_left .box .text {
+#servicios .descrip_left .box .text {
   width: 40%;
   text-align: justify;
   padding: 20px 50px;
   margin-left: 120px;
 }
 
-#servicioss .box .text h2 {
+#servicios .box .text h2 {
   font-size: 2.5rem;
   padding: 20px 0;
 }
 
-#servicioss .box .text p {
+#servicios .box .text p {
   font-size: 1.2rem;
 }
 
-#servicioss .descrip_right .box .img {
+#servicios .descrip_right .box .img {
   text-align: right;
   width: 50%;
   height: 100%;
 }
 
-#servicioss .descrip_left .box .img {
+#servicios .descrip_left .box .img {
   text-align: center;
   width: 50%;
   height: 100%;
 }
 
-#servicioss .box .img img {
+#servicios .box .img img {
   position: relative;
   border-radius: 70px;
   filter: drop-shadow(5px 7px 10px #3EC4FE);
@@ -410,7 +409,7 @@ header ul {
   height: 344px;
 }
 
-/* Servicioss end */
+/* servicios end */
 
 /* Contacto star */
 #contacto h2 {

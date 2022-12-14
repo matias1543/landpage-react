@@ -1,10 +1,10 @@
-import { useState, forwardRef } from 'react'
+import { forwardRef } from 'react';
 import { Servicio } from '../components/Servicio';
 
 export const Servicios = forwardRef((props, ref)=> {
     return (
         <div id="container-one" ref={ref}>
-            <section id="servicioss">
+            <section id="servicios">
                 <h1>Nuestros Servicios:</h1>
                     <div className="grupo_servicios">
                         <Servicio position={'right'}/>

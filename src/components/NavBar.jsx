@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import VisiviaImg from '../assets/imgs/Visivia.png';
 
-export const NavBar = ({ nosotrosRef, serviciosRef, contactoRef }) => {
+export const NavBar = ({ nosotrosRef, clientesRef, serviciosRef, contactoRef }) => {
 
     const [sideBarOpen, setSideBarOpen] = useState(false)
 
@@ -12,12 +13,13 @@ export const NavBar = ({ nosotrosRef, serviciosRef, contactoRef }) => {
         <header>
             <div className="max">
                 <div className="logo">
-                    <h2>Visivia</h2>
+                    {/* <h2>Visivia</h2> */}
+                    <img src={VisiviaImg} alt="visivia" />
                 </div>
                 <nav>
                     <a><h3 onClick={() => nosotrosRef.current?.scrollIntoView({ behavior: "smooth" })}>Nosotros</h3></a>
+                    <a><h3 onClick={() => clientesRef.current?.scrollIntoView({ behavior: "smooth" })}>Clientes</h3></a>
                     <a><h3 onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Servicios</h3></a>
-                    <a><h3 /* onClick={() => clientesRef.current?.scrollIntoView({ behavior: "smooth" })} */>Clientes</h3></a>
                     <a><h3 /* onClick={() => noticiasRef.current?.scrollIntoView({ behavior: "smooth" })} */>Noticias</h3></a>
                     <a><h3 onClick={() => contactoRef.current?.scrollIntoView({ behavior: "smooth" })}>Contacto</h3></a>
                     <input type="checkbox" id="check" />
@@ -27,8 +29,8 @@ export const NavBar = ({ nosotrosRef, serviciosRef, contactoRef }) => {
                 </nav>
                 <ul className={`menuNav ${sideBarOpen ? " showMenu" : ""}`}>
                     <li><a><h3 onClick={() => nosotrosRef.current?.scrollIntoView({ behavior: "smooth" })}>Nosotros</h3></a></li>
+                    <li><a><h3 onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Clientes</h3></a></li>
                     <li><a><h3 onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Servicios</h3></a></li>
-                    <li><a><h3 /* onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })} */>Clientes</h3></a></li>
                     <li><a><h3 /* onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })} */>Noticias</h3></a></li>
                     <li><a><h3 onClick={() => contactoRef.current?.scrollIntoView({ behavior: "smooth" })}>Contacto</h3></a></li>
                 </ul>
