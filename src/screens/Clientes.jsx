@@ -27,12 +27,22 @@ export const Clientes = forwardRef((props, ref) => {
                 slidesToScroll: 1
             }
         }
+        if(width <= 700) {
+            return {
+                infinite: true,
+                speed: 500,
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
         if(width <= 1054) {
             return {
                 infinite: true,
                 speed: 500,
                 arrows: true,
-                dots: true,
+                dots: false,
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
@@ -42,7 +52,7 @@ export const Clientes = forwardRef((props, ref) => {
                 infinite: true,
                 speed: 500,
                 arrows: true,
-                dots: true,
+                dots: false,
                 slidesToShow: 3,
                 slidesToScroll: 3
             }

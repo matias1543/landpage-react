@@ -94,7 +94,7 @@ const ModalStyle = {
         backgroundColor: '#024687',
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
         borderRadius: '10px',
-        width: '10%',
+        width: '100%',
         border: '1px solid #024687',
         cursor: 'pointer'
     }

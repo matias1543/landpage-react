@@ -141,7 +141,7 @@ header ul {
 }
 
 #landing .descrip button {
-  padding: 15px;
+  padding: 25px;
   margin-top: 40px;
   font-size: 16px;
   font-weight: bold;
@@ -276,7 +276,7 @@ header ul {
 #clientes .max .grupo_clientes {
   display: flex;
   flex-direction: row;
-  margin-left: 70px;
+  margin-left: 60px;
   width: 90%;
 }
 
@@ -287,7 +287,8 @@ header ul {
   /* height: 500px; */
   height: 420px;
   border-radius: 70px;
-  margin: 0 40px;
+  /* margin: 0 40px; */
+  margin: auto;
   background: no-repeat;
 }
 
@@ -357,7 +358,8 @@ header ul {
 
 #servicios .box {
   width: 90%;
-  height: 356px;
+  /* height: 356px; */
+  height: 100%;
   background-color: var(--white-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 70px;
@@ -403,12 +405,11 @@ header ul {
   position: relative;
   border-radius: 70px;
   filter: drop-shadow(5px 7px 10px #3EC4FE);
-  top: -150px;
+  top: -100px;
   /* width: 70%; */
   width: 410px;
   height: 344px;
 }
-
 /* servicios end */
 
 /* Contacto star */
@@ -481,6 +482,7 @@ header ul {
   border-radius: 10px;
   padding: 15px 0;
 }
+/* Contacto end */
 
 /* Footer star */
 footer {
@@ -537,7 +539,8 @@ footer .utilities a {
 }
 /* Footer end */
 
-@media (max-width: 412px) {
+/* Mobile start*/
+@media (max-width: 500px) {
   #landing .max {
     height: 100rem;
   }
@@ -547,12 +550,63 @@ footer .utilities a {
   }
 
   #clientes .max .grupo_clientes {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-left: 15px;
-    bottom: 55px;
+    /* bottom: 55px; */
     right: 5px;
     width: 90%;
+  }
+
+  #values .bulb {
+    margin: 0;
+    width: 100%;
+  }
+
+  #values .descrip {
+    padding-left: 6px;
+  }
+
+
+  #servicios .box {
+    height: 100%;
+  }
+
+  #servicios .descrip_right {
+    margin-bottom: 50px;
+  }
+
+  #servicios .descrip_left {
+    margin-bottom: 50px;
+  }
+
+  #servicios .descrip_right .box .text {
+    width: 100%;
+    text-align: justify;
+    padding: 20px 50px;
+  }
+
+  #servicios .descrip_left .box .text {
+    width: 100%;
+    text-align: justify;
+    padding: 20px 50px;
+    margin-left: 0;
+  }
+
+  #servicios .box .img {
+    display: none;
+  }
+ 
+  #servicios .box img {
+    display: none;
+  }
+}
+/* Mobile end*/
+
+@media (max-width: 555px) {
+  #clientes {
+    height: 54rem;
   }
 }
 
@@ -628,6 +682,14 @@ footer .utilities a {
   #landing .descrip {
       width: 100%;
       color: var(--white-main);
+  }
+
+  #landing .max {
+    height: 100rem;
+  }
+
+  #clientes .max .grupo_clientes {
+    margin-left: 20px;
   }
 }
 
