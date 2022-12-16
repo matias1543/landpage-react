@@ -1,16 +1,25 @@
-import ServiceOneImg from '../assets/imgs/services/service_one.png'
+import ServiceOneImg from '../assets/imgs/services/service_one.png';
 
-export const Servicio = ({ position }) => {
+export const Servicio = ({ title, position, services }) => {
     return (
         <div className={`descrip_${position}`}>
             <div className="box">
                 { 
                     position == 'right' 
                         ? (
-                            <>
+                            <> 
                                 <div className="text">
-                                    <h2>Prensa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend ligula blandit malesuada bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tincidunt metus id sollicitudin sagittis.</p>
+                                    <h2>{ title }</h2>
+                                    { 
+                                        services.map( (servicio, index) => {
+                                            return (
+                                                <div key={`servicio.title+${index}`}>
+                                                    <h3>{servicio.title}</h3>
+                                                    <p>{servicio.info}</p>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                                 <div className="img">
                                     <img src={ServiceOneImg} alt="service_one" />
@@ -23,14 +32,21 @@ export const Servicio = ({ position }) => {
                                     <img src={ServiceOneImg} alt="service_one" />
                                 </div>
                                 <div className="text">
-                                    <h2>Prensa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend ligula blandit malesuada bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tincidunt metus id sollicitudin sagittis.</p>
+                                    <h2>{ title }</h2>
+                                    { 
+                                        services.map( (servicio, index) => {
+                                            return (
+                                                <div key={`servicio.title+${index}`}>
+                                                    <h3>{servicio.title}</h3>
+                                                    <p>{servicio.info}</p>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </>
                         )
-
                 }
-
             </div>
         </div>
     )
