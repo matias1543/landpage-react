@@ -169,7 +169,9 @@ header ul {
 }
 
 #landing .intro img {
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
+  max-width: 400px;
   border-radius: 35px;
   margin-top: 70px;
 }
@@ -261,6 +263,10 @@ header ul {
 #values .icon h4 {
   padding-top: 20px;
   text-align: center;
+}
+
+#values .bulb-mobile {
+  display: none;
 }
 /* values end */
 
@@ -578,12 +584,17 @@ footer .utilities a {
     width: 90%;
   }
 
+  #values .bulb-mobile {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top: 100px;
+    border-radius: 35px;
+    width: 100%;
+  }
+
   #values .bulb {
     display: none;
-    /* position: relative;
-    margin: 0;
-    margin-top: 200px;
-    width: 100%; */
   }
 
   #values .descrip {
@@ -725,5 +736,11 @@ footer .utilities a {
       width: 100%;
       margin-top: 160px;
       justify-content: center;
+  }
+}
+
+@media (min-width: 1715px) {
+  #container-one {
+    margin-top: 200px;
   }
 }

@@ -20,6 +20,7 @@ export const Valores = forwardRef((props, ref) => {
                             <h1>Valores</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla unde at, odit facilis eligendi. Qui accusantium error totam repellat illum quia molestias tenetur, maxime id quis, odit culpa fuga.</p>
                         </div>
+                        <img src={BulbImg} className="bulb-mobile" alt="bulb" />
                     </div>
                     <div className="icons">
                         <div className="icon">
