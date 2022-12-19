@@ -2,8 +2,8 @@ import { forwardRef } from 'react';
 
 export const Contacto = forwardRef((props, ref) => {
     return (
-        <div ref={ref} id="container-one">
-            <section id="contacto">
+        <div ref={ref} className='parentContainer'>
+            <section className='container' id="contacto">
                     <h2>Contacto</h2>
                     <form className="max pure-form "action="#">
                         <div className="datos">

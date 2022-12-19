@@ -1,53 +1,44 @@
-import ServiceOneImg from '../assets/imgs/services/service_one.png';
-
-export const Servicio = ({ title, position, services }) => {
+export const Servicio = ({ title, services }) => {
     return (
-        <div className={`descrip_${position}`}>
-            <div className="box">
-                { 
-                    position == 'right' 
-                        ? (
-                            <> 
-                                <div className="text">
-                                    <h2>{ title }</h2>
-                                    { 
-                                        services.map( (servicio, index) => {
-                                            return (
-                                                <div key={`servicio.title+${index}`}>
-                                                    <h3>{servicio.title}</h3>
-                                                    <p>{servicio.info}</p>
-                                                </div>
+        <>
+            <h1 style={{ marginBottom: '150px', width: '100%'}}>{ title }.</h1>
+            <div className="grupo_servicios">
+                {
+                    services.map( ({ title, info, position, img }) => {
+                        return (
+                            <div className="descrip" key={`service-${title}`}>
+                                <div className='box'>
+                                    {
+                                        position == 'right'
+                                            ? (
+                                                <>
+                                                    <div className='text'>
+                                                        <h2>{ title }</h2>
+                                                        <p>{ info }</p>
+                                                    </div>
+                                                    <div className="img">
+                                                        <img src={img} alt="img" />
+                                                    </div>
+                                                </>
                                             )
-                                        })
+                                            : (
+                                                <>
+                                                    <div className="img">
+                                                        <img src={img} alt="img" />
+                                                    </div>
+                                                    <div className='text'>
+                                                        <h2>{ title }</h2>
+                                                        <p>{ info }</p>
+                                                    </div>
+                                                </>
+                                            )
                                     }
                                 </div>
-                                <div className="img">
-                                    <img src={ServiceOneImg} alt="service_one" />
-                                </div>
-                            </>
+                            </div>
                         )
-                        : (
-                            <>
-                                <div className="img">
-                                    <img src={ServiceOneImg} alt="service_one" />
-                                </div>
-                                <div className="text">
-                                    <h2>{ title }</h2>
-                                    { 
-                                        services.map( (servicio, index) => {
-                                            return (
-                                                <div key={`servicio.title+${index}`}>
-                                                    <h3>{servicio.title}</h3>
-                                                    <p>{servicio.info}</p>
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </>
-                        )
+                    })
                 }
             </div>
-        </div>
+        </>
     )
 }

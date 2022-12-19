@@ -10,17 +10,17 @@ import BalanceImg from "../assets/imgs/values/balance.png";
 
 export const Valores = forwardRef((props, ref) => {
     return (
-        <div ref={ref} id="container-one">
-            <section id="values">
-                <img src={RectangleImg} className="rectangle" alt="rectangle" />
-                <img src={BulbImg} className="bulb" alt="bulb" />
+        <div ref={ref} className="parentContainer" style={{ backgroundImage: `url(${RectangleImg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', padding: '60px'}}>
+            <section className='container'  id="values">
                 <div className="max">
                     <div className="descrip">
-                        <div className="box">
+                        <div className='box'>
                             <h1>Valores</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla unde at, odit facilis eligendi. Qui accusantium error totam repellat illum quia molestias tenetur, maxime id quis, odit culpa fuga.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, similique repudiandae! Expedita placeat doloribus sit voluptates aliquam veritatis cumque totam molestiae. Culpa, unde tempore nihil asperiores quisquam maiores cum dolores?</p>
                         </div>
-                        <img src={BulbImg} className="bulb-mobile" alt="bulb" />
+                        <div className='box-image'>
+                            <img src={BulbImg} alt="bulb" />
+                        </div>
                     </div>
                     <div className="icons">
                         <div className="icon">
@@ -53,3 +53,48 @@ export const Valores = forwardRef((props, ref) => {
         </div>
     )
 })
+
+
+// const ModalStyle = {
+//     title: {
+//         color: '#024687',
+//         fontSize: '3rem'
+//     },
+//     paragraph: {
+//         fontSize: '1.1rem',
+//         marginBottom: '15px',
+//         textAlign: 'justify'
+//     },
+//     userContainer: {
+//         display: 'flex',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         width: '600px',
+//         height: '400px'
+//     },
+//     boxText: {
+//         position: 'relative',
+//         display: 'flex',
+//         flexDirection: 'column',
+//         textAlign: 'left',
+//         width: '100%',
+//         height: '70%',
+//         padding: '20px',
+//         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+//         backgroundColor: '#ffff',
+//         borderRadius: '20px',
+//         zIndex: '5',
+//         marginRight: '-5%'
+        
+//     },
+//     boxImage: {
+//         borderRadius: '70px',
+//         height: '100%',
+//         width: '80%',
+//         overflow: 'hidden'
+//     },
+//     bulbImg: {
+//         width: '100%',
+//         height: '100%'
+//     }
+// }

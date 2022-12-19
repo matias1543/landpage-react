@@ -5,8 +5,10 @@ import BgBlueImg from '../assets/imgs/bg-blue.png';
 import FacebookImg from '../assets/imgs/network/about/icon-facebook.png';
 import InstagramImg from '../assets/imgs/network/about/icon-instagram.png';
 import TwitterImg from '../assets/imgs/network/about/icon-twitter.png';
+import CloseImg from '../assets/imgs/close-icon.png';
+import LuisCuenceImg from '../assets/imgs/luis-cuence.png';
+import AngieImg from '../assets/imgs/avatars/avatar_angie.png';
 
-// Modal.defaultStyles.overlay.backgroundColor = '#0000';
 Modal.setAppElement('#root');
 
 export const Nosotros = forwardRef((props, ref) => {
@@ -22,7 +24,7 @@ export const Nosotros = forwardRef((props, ref) => {
     }
 
     return (
-        <div id="container" ref={ref}>
+        <div className="container" ref={ref}>
             <section id="landing">
                 <Modal
                     isOpen={ modalIsOpen }
@@ -30,11 +32,20 @@ export const Nosotros = forwardRef((props, ref) => {
                     style={ customStyles }
                     contentLabel="Example Modal"
                 >
-                    <h1 style={ModalStyle.title}>Nosotros:</h1>
-                    <p style={ModalStyle.paragraph}>Somos una agencia dedicada a los asuntos públicos, el análisis estratégico y las relaciones institucionales, comprometidos con la confidencialidad, credibilidad e integridad de nuestros clientes. </p>
-                    <p style={ModalStyle.paragraph}><span style={{ color: '#024687', fontWeight: 'bold'}}>Luis Cuence:</span> Luis Cuence es lic. en Ciencia Política de la Universidad Católica Argentina (UCA). Se ha especializado en asuntos regulatorios y gubernamentales, y cuenta con experiencia en proyectos de inversión pública privada.</p>
-                    <p style={ModalStyle.paragraph}><span style={{ color: '#024687', fontWeight: 'bold'}}>Guadalupe:</span></p>
-                    <button style={ModalStyle.button} onClick={ closeModal }>Cerrar</button>
+                    <div style={ModalStyle.closeContainer}>
+                        <img style={ModalStyle.close} src={CloseImg} alt="close-icon" onClick={ closeModal }/>
+                    </div>
+                    <div style={ModalStyle.content}>
+                        <div style={ModalStyle.userContainer}>
+                            <div style={ModalStyle.boxText}>
+                                <h1 style={ModalStyle.title}>Luis Cuence</h1>
+                                <p style={ModalStyle.paragraph}>Luis Cuence es lic. en Ciencia Política de la Universidad Católica Argentina (UCA). Se ha especializado en asuntos regulatorios y gubernamentales, y cuenta con experiencia en proyectos de inversión pública privada.</p>
+                            </div>
+                            <div style={ModalStyle.boxImage}>
+                                <img style={ModalStyle.LuisCuenceImg} src={LuisCuenceImg} alt="luis-cuence-img" />
+                            </div>
+                        </div>
+                    </div>
                 </Modal>
                 <img src={BgBlueImg} alt="bg-blue" className='img-landing' />
                 <div className="max">
@@ -61,12 +72,11 @@ export const Nosotros = forwardRef((props, ref) => {
 const customStyles = {
     content: {
         position: 'absolute',
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-45%',
-        transform: 'translate(-50%, -50%)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: '20px'
     },
     overlay: {
         backgroundColor: 'rgb(0,0,0, 0.75)'
@@ -83,17 +93,84 @@ const ModalStyle = {
         marginBottom: '15px',
         textAlign: 'justify'
     },
-    button: {
-        padding: '15px',
-        marginTop: '40px',
-        fontSize: '16px',
-        fontWeight: 'bold',
-        color: '#fff',
-        backgroundColor: '#024687',
-        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-        borderRadius: '10px',
+    content: {
         width: '100%',
-        border: '1px solid #024687',
-        cursor: 'pointer'
+        height: '95%',
+        overflowY: 'scroll',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        alignContent: 'center',
+        justifyContent: 'center',
+        marginTop: '10px'
     },
+    userContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '800px',
+        height: '400px'
+    },
+    boxText: {
+        position: 'relative',
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'left',
+        width: '100%',
+        height: '70%',
+        padding: '20px',
+        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        backgroundColor: '#ffff',
+        borderRadius: '20px',
+        zIndex: '5',
+        marginRight: '-5%'
+        
+    },
+    boxImage: {
+        borderRadius: '70px',
+        height: '100%',
+        width: '80%',
+        overflow: 'hidden'
+    },
+    LuisCuenceImg: {
+        width: '100%',
+        height: '100%'
+    },
+    closeContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        width: '100%',
+        padding: '5px'
+    },
+    close: {
+        cursor: 'pointer',
+        width: '40px',
+        height: '40px'
+    }
 }
+
+// <div style={ModalStyle.containerImg}>
+//     <img style={ModalStyle.close} src={CloseImg} alt="close-icon" onClick={ closeModal }/>
+// </div>
+// <div style={ModalStyle.content}>
+//     <div style={ModalStyle.container}>
+//         <div style={ModalStyle.boxText}>
+//             <h1 style={ModalStyle.title}>Luis Cuence</h1>
+//             <p style={ModalStyle.paragraph}>Luis Cuence es lic. en Ciencia Política de la Universidad Católica Argentina (UCA). Se ha especializado en asuntos regulatorios y gubernamentales, y cuenta con experiencia en proyectos de inversión pública privada.</p>
+//         </div>
+//         <div style={ModalStyle.boxImage}>
+//             <img style={ModalStyle.LuisCuenceImg} src={LuisCuenceImg} alt="luis-cuence-img" />
+//         </div>
+//     </div>
+
+//     <div style={ModalStyle.container}>
+//         <div style={ModalStyle.boxImage}>
+//             <img style={ModalStyle.LuisCuenceImg} src={AngieImg} alt="luis-cuence-img" />
+//         </div>
+//         <div style={ModalStyle.boxText}>
+//             <h1 style={ModalStyle.title}>Guadalupe</h1>
+//             <p style={ModalStyle.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aliquid nisi repellat dolor officia inventore minima iure quisquam eaque, maiores in, ratione asperiores nostrum. Aut delectus quo amet eveniet aliquam?</p>
+//         </div>
+//     </div>
+// </div>

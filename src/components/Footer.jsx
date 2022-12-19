@@ -5,7 +5,7 @@ import PinterestImg from "../assets/imgs/network/icon-pinterest.svg"
 import TwitterImg from "../assets/imgs/network/icon-twitter.svg"
 import YoutubeImg from "../assets/imgs/network/icon-youtube.svg"
 
-export const Footer = ({ nosotrosRef, clientesRef, serviciosRef, contactoRef }) => {
+export const Footer = ({ nosotrosRef, valoresRef, clientesRef, serviciosRef, contactoRef }) => {
     return (
         <footer>
             <div className="max">
@@ -21,6 +21,7 @@ export const Footer = ({ nosotrosRef, clientesRef, serviciosRef, contactoRef }) 
                 </div>
                 <div className="utilities">
                     <a onClick={() => nosotrosRef.current?.scrollIntoView({ behavior: "smooth" })}>Nosotros</a>
+                    <a onClick={() => valoresRef.current?.scrollIntoView({ behavior: "smooth" })}>Valores</a>
                     <a onClick={() => clientesRef.current?.scrollIntoView({ behavior: "smooth" })}>Clientes</a>
                     <a onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Servicios</a>
                     <a onClick={() => contactoRef.current?.scrollIntoView({ behavior: "smooth" })}>Contacto</a>

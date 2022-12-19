@@ -62,8 +62,8 @@ export const Clientes = forwardRef((props, ref) => {
     let settings = cardsToShow(width);
 
     return (
-        <div id='container-one' ref={ref}>
-            <section id='clientes'>
+        <div className='parentContainer' ref={ref} style={{ width: '100%', backgroundColor: '#b00b', background: `radial-gradient(86.77% 115.05% at -3.89% 4.67%, #3ED9FE 28.13%, #024687 81.25%)`}}>
+            <section className='container' id='clientes'>
                 <h1>Quienes Confían En Nosotros?</h1>
                 <div className='max'>
                     <Slider className='grupo_clientes' {...settings}>
@@ -86,3 +86,8 @@ export const Clientes = forwardRef((props, ref) => {
         </div>
     )
 })
+
+// .parentContainer {
+//     width: 100%;
+//     background-color: '#b00b';
+//   }
