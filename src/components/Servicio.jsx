@@ -1,13 +1,13 @@
 export const Servicio = ({ title, services }) => {
     return (
         <>
-            <h1 style={{ marginBottom: '150px', width: '100%'}}>{ title }.</h1>
+            <h1 style={{ width: '100%'}}>{ title }.</h1>
             <div className="grupo_servicios">
                 {
                     services.map( ({ title, info, position, img }) => {
                         return (
-                            <div className="descrip" key={`service-${title}`}>
-                                <div className='box'>
+                            <div className="descrip"  key={`service-${title}`}>
+                                <div className={`box ${position}`}>
                                     {
                                         position == 'right'
                                             ? (

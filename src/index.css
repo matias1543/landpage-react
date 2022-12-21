@@ -26,12 +26,8 @@
 
 .parentContainer {
   width: 100%;
-}
-
-/* #container-one {
-  width: 100%;
   margin: 0 auto;
-} */
+}
 
 .max {
   margin: 0 auto;
@@ -107,12 +103,10 @@ header ul {
   width: 1250px;
   top: 0;
   left: 0;
-  /* z-index: 1; */
 }
 
 #landing .max {
   position: relative;
-  /* z-index: 2; */
   padding-top: 3rem;
   width: 100%;
   display: flex;
@@ -208,17 +202,14 @@ header ul {
 
 #values .descrip {
   width: 50%;
-  height: 400px;
+  height: 100%;
   padding-left: 50px;
-  /* margin: 10%; */
   padding: 5px;
   display: flex;
   flex-direction: row;
 }
 
 #values .box {
-  /* width: 399px; */
-  /* height: 356px; */
   width: 350px;
   height: 300px;
   margin-top: 30px;
@@ -300,9 +291,7 @@ header ul {
 
 /* Clientes start */
 #clientes {
-  position: relative;
-  height: 48rem;
-  /* margin-top: 90px; */
+  padding-bottom: 50px;
 }
 
 #clientes h1 {
@@ -362,20 +351,11 @@ header ul {
 /* clientes end */
 
 /* servicios start */
-#servicios {
-  position: relative;
-  /* background-image: url(./assets/imgs/rectangle-services.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
-
 #servicios h1 {
   color: var(--blue-main);
   font-size: 4rem;
-  padding: 60px 40px;
-  margin-top: 0;
   text-align: left;
-  margin-top: 25px;
+  margin-bottom: 150px;
 }
 
 #servicios .grupo_servicios {
@@ -430,7 +410,7 @@ header ul {
   text-align: center;
   width: 50%;
   height: 100%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #servicios .box .img img {
@@ -576,12 +556,8 @@ footer .utilities a {
   }
 
   #landing .max .descrip .network {
-  display: flex;
-  margin-top: 100px;
-}
-
-  #clientes {
-    height: 50rem;
+    display: flex;
+    margin-top: 100px;
   }
 
   #clientes .max .grupo_clientes {
@@ -589,7 +565,6 @@ footer .utilities a {
     display: flex;
     flex-direction: row;
     margin-left: 15px;
-    /* bottom: 55px; */
     right: 5px;
     width: 90%;
   }
@@ -603,55 +578,59 @@ footer .utilities a {
     width: 100%;
   }
 
-  #values .bulb {
+  /* #values .bulb {
     display: none;
-  }
+  } */
 
   #values .descrip {
-    padding-left: 6px;
+    flex-direction: column;
   }
 
+  #values .box {
+    width: 100%;
+  }
 
-  #servicios .box {
+  #values .box-image {
+    width: 100%;
+    margin-top: 65px;
+  }
+
+  #servicios h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  #servicios .right  {
     height: 100%;
+    flex-direction: column;
   }
 
-  #servicios .descrip_right {
+  #servicios .left {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  #servicios .descrip {
     margin-bottom: 50px;
   }
 
-  #servicios .descrip_left {
-    margin-bottom: 50px;
-  }
-
-  #servicios .descrip_right .box .text {
+  #servicios .descrip .box .text {
     width: 100%;
     text-align: justify;
-    padding: 20px 50px;
+    padding: 10px 10px;
   }
 
-  #servicios .descrip_left .box .text {
+  #servicios .descrip .box .img {
     width: 100%;
-    text-align: justify;
-    padding: 20px 50px;
-    margin-left: 0;
+    margin-top: 65px;
   }
 
-  #servicios .box .img {
-    display: none;
-  }
- 
-  #servicios .box img {
-    display: none;
+  #servicios .descrip .box .img img {
+    width: 100%;
   }
 }
 /* Mobile end*/
-
-@media (max-width: 555px) {
-  #clientes {
-    height: 54rem;
-  }
-}
 
 
 @media (max-width: 774px) {

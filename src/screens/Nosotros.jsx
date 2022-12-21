@@ -149,28 +149,3 @@ const ModalStyle = {
         height: '40px'
     }
 }
-
-// <div style={ModalStyle.containerImg}>
-//     <img style={ModalStyle.close} src={CloseImg} alt="close-icon" onClick={ closeModal }/>
-// </div>
-// <div style={ModalStyle.content}>
-//     <div style={ModalStyle.container}>
-//         <div style={ModalStyle.boxText}>
-//             <h1 style={ModalStyle.title}>Luis Cuence</h1>
-//             <p style={ModalStyle.paragraph}>Luis Cuence es lic. en Ciencia Política de la Universidad Católica Argentina (UCA). Se ha especializado en asuntos regulatorios y gubernamentales, y cuenta con experiencia en proyectos de inversión pública privada.</p>
-//         </div>
-//         <div style={ModalStyle.boxImage}>
-//             <img style={ModalStyle.LuisCuenceImg} src={LuisCuenceImg} alt="luis-cuence-img" />
-//         </div>
-//     </div>
-
-//     <div style={ModalStyle.container}>
-//         <div style={ModalStyle.boxImage}>
-//             <img style={ModalStyle.LuisCuenceImg} src={AngieImg} alt="luis-cuence-img" />
-//         </div>
-//         <div style={ModalStyle.boxText}>
-//             <h1 style={ModalStyle.title}>Guadalupe</h1>
-//             <p style={ModalStyle.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aliquid nisi repellat dolor officia inventore minima iure quisquam eaque, maiores in, ratione asperiores nostrum. Aut delectus quo amet eveniet aliquam?</p>
-//         </div>
-//     </div>
-// </div>
