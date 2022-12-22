@@ -249,7 +249,7 @@ header ul {
   grid-template-rows: 150px 150px 150px;
   justify-content: center;
   width: 50%;
-  min-width: 480px;
+  min-width: 350px;
 }
 
 #values .icon img {
@@ -532,6 +532,7 @@ footer .utilities a {
 
   #landing .descrip {
     width: 100%;
+    padding: 0;
   }
 
   #landing .max .descrip .network {

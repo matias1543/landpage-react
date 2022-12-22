@@ -75,8 +75,3 @@ export const Clientes = forwardRef(({ width }, ref) => {
         </div>
     )
 })
-
-// .parentContainer {
-//     width: 100%;
-//     background-color: '#b00b';
-//   }
