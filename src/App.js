@@ -29,7 +29,7 @@ const App = () => {
         contactoRef={contactoRef}
         clientesRef={clientesRef}
       >
-        <Nosotros ref={nosotrosRef} width={width} />
+        <Nosotros ref={nosotrosRef} />
         <Valores ref={valoresRef} />
         <Clientes ref={clientesRef} width={width} />
         <Servicios ref={serviciosRef} />

@@ -29,7 +29,7 @@ export const NavBar = ({ nosotrosRef, valoresRef, clientesRef, serviciosRef, con
                 <ul className={`menuNav ${sideBarOpen ? " showMenu" : ""}`}>
                     <li><a><h3 onClick={() => nosotrosRef.current?.scrollIntoView({ behavior: "smooth" })}>Nosotros</h3></a></li>
                     <li><a><h3 onClick={() => valoresRef.current?.scrollIntoView({ behavior: "smooth" })}>Valores</h3></a></li>
-                    <li><a><h3 onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Clientes</h3></a></li>
+                    <li><a><h3 onClick={() => clientesRef.current?.scrollIntoView({ behavior: "smooth" })}>Clientes</h3></a></li>
                     <li><a><h3 onClick={() => serviciosRef.current?.scrollIntoView({ behavior: "smooth" })}>Servicios</h3></a></li>
                     <li><a><h3 onClick={() => contactoRef.current?.scrollIntoView({ behavior: "smooth" })}>Contacto</h3></a></li>
                 </ul>
