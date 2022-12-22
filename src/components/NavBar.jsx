@@ -10,10 +10,9 @@ export const NavBar = ({ nosotrosRef, valoresRef, clientesRef, serviciosRef, con
     }
 
     return (
-        <header>
-            <div className="max">
+        <header className='parentContainer'>
+            <div className="max" >
                 <div className="logo">
-                    {/* <h2>Visivia</h2> */}
                     <img src={VisiviaImg} alt="visivia" />
                 </div>
                 <nav>

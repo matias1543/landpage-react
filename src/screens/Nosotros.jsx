@@ -11,7 +11,7 @@ import AngieImg from '../assets/imgs/avatars/avatar_angie.png';
 
 Modal.setAppElement('#root');
 
-export const Nosotros = forwardRef((props, ref) => {
+export const Nosotros = forwardRef(({ width }, ref) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -23,8 +23,31 @@ export const Nosotros = forwardRef((props, ref) => {
         setModalIsOpen(false);
     }
 
+    const styleUserContainer = () => {
+        if(width <= 900) {
+            return  {
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '80%',
+                height: '80%'
+            }
+        }
+        else {
+           return {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '800px',
+            height: '400px'
+            }
+        }
+    }
+
     return (
-        <div className="container" ref={ref}>
+        <div className="container" ref={ref} style={{ backgroundImage: `url(${BgBlueImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '1240px', padding: '60px' }}>
             <section id="landing">
                 <Modal
                     isOpen={ modalIsOpen }
@@ -36,7 +59,7 @@ export const Nosotros = forwardRef((props, ref) => {
                         <img style={ModalStyle.close} src={CloseImg} alt="close-icon" onClick={ closeModal }/>
                     </div>
                     <div style={ModalStyle.content}>
-                        <div style={ModalStyle.userContainer}>
+                        <div style={styleUserContainer()}>
                             <div style={ModalStyle.boxText}>
                                 <h1 style={ModalStyle.title}>Luis Cuence</h1>
                                 <p style={ModalStyle.paragraph}>Luis Cuence es lic. en Ciencia Política de la Universidad Católica Argentina (UCA). Se ha especializado en asuntos regulatorios y gubernamentales, y cuenta con experiencia en proyectos de inversión pública privada.</p>
@@ -47,7 +70,6 @@ export const Nosotros = forwardRef((props, ref) => {
                         </div>
                     </div>
                 </Modal>
-                <img src={BgBlueImg} alt="bg-blue" className='img-landing' />
                 <div className="max">
                     <div className="descrip">
                         <h1>Nosotros:</h1>
@@ -104,13 +126,13 @@ const ModalStyle = {
         justifyContent: 'center',
         marginTop: '10px'
     },
-    userContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '800px',
-        height: '400px'
-    },
+    // userContainer: {
+    //     display: 'flex',
+    //     justifyContent: 'center',
+    //     alignItems: 'center',
+    //     width: '800px',
+    //     height: '400px'
+    // },
     boxText: {
         position: 'relative',
         display: 'flex',
@@ -123,13 +145,14 @@ const ModalStyle = {
         backgroundColor: '#ffff',
         borderRadius: '20px',
         zIndex: '5',
-        marginRight: '-5%'
-        
+        marginRight: '-5%',
+        marginBottom: '10%'
     },
     boxImage: {
         borderRadius: '70px',
         height: '100%',
         width: '80%',
+        maxWidth: '365px',
         overflow: 'hidden'
     },
     LuisCuenceImg: {

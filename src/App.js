@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { AppLayout } from './layout/AppLayout';
 import { Nosotros, Valores, Clientes, Servicios, Contacto } from './screens';
 
@@ -10,6 +10,17 @@ const App = () => {
   const serviciosRef = useRef(null);
   const contactoRef = useRef(null);
 
+  const [width, setWidth] = useState(window.innerWidth);
+    
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+  
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    }
+  }, [])
+
   return (
       <AppLayout 
         nosotrosRef={nosotrosRef}
@@ -18,9 +29,9 @@ const App = () => {
         contactoRef={contactoRef}
         clientesRef={clientesRef}
       >
-        <Nosotros ref={nosotrosRef} />
+        <Nosotros ref={nosotrosRef} width={width} />
         <Valores ref={valoresRef} />
-        <Clientes ref={clientesRef} />
+        <Clientes ref={clientesRef} width={width} />
         <Servicios ref={serviciosRef} />
         <Contacto ref={contactoRef} />
       </AppLayout>

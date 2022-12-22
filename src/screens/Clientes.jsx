@@ -1,21 +1,10 @@
-import { useState, forwardRef, useEffect } from 'react';
+import { forwardRef } from 'react';
 import Slider from "react-slick";
 import { Cliente } from '../components/Cliente';
 import { clientes } from '../data/clientes';
 
-export const Clientes = forwardRef((props, ref) => {
-    
-    const [width, setWidth] = useState(window.innerWidth);
-    
-    useEffect(() => {
-      const handleResizeWindow = () => setWidth(window.innerWidth);
-    
-      window.addEventListener("resize", handleResizeWindow);
-      return () => {
-        window.removeEventListener("resize", handleResizeWindow);
-      }
-    }, [])
-    
+export const Clientes = forwardRef(({ width }, ref) => {
+
     const cardsToShow = (width) => {
         if(width <= 412) {
             return {

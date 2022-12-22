@@ -7,7 +7,7 @@ import YoutubeImg from "../assets/imgs/network/icon-youtube.svg"
 
 export const Footer = ({ nosotrosRef, valoresRef, clientesRef, serviciosRef, contactoRef }) => {
     return (
-        <footer>
+        <footer className='parentContainer'>
             <div className="max">
                 <div className="socials">
                     <h3>Visivia</h3>

@@ -46,6 +46,7 @@ header {
 }
 
 header .max {
+  max-width: 1400px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -56,11 +57,6 @@ header .max .logo {
   justify-content: flex-start;
   padding-left: 45px;
   width: 40%;
-}
-
-header .max h2 {
-  color: var(--blue-main);
-  font-size: 2.5rem;
 }
 
 header .max nav {
@@ -96,30 +92,23 @@ header ul {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-}
-
-#landing .img-landing {
-  position: absolute;
-  width: 1250px;
-  top: 0;
-  left: 0;
+  margin-bottom: 150px;
 }
 
 #landing .max {
   position: relative;
-  padding-top: 3rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 65rem;
+  margin-top: 100px;
 }
 
 #landing .descrip {
   width: 50%;
+  height: 100%;
   color: var(--white-main);
-  padding: 10px 80px;
-  margin-top: 90px;
+  padding: 0 50px;
 }
 
 #landing .descrip h1 {
@@ -160,19 +149,27 @@ header ul {
 
 #landing .max .descrip .network {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 #landing .max .descrip .network img {
   padding-right: 30px;
 }
 
+#landing .intro {
+  width: 50%;
+  height: 100%;
+  min-width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #landing .intro img {
-  /* width: 400px; */
   width: 100%;
   max-width: 400px;
   border-radius: 35px;
-  margin-top: 70px;
 }
 
 .ReactModalPortal {
@@ -182,20 +179,12 @@ header ul {
 /* Landing end */
 
 /* values start */
-#values .bulb {
-  /* position: absolute; */
-  /* z-index: 0; */
-  border-radius: 35px;
-  margin-left: 130px;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  filter: drop-shadow(5px 7px 10px #3EC4FE);
-  width: 450px;
-}
-
 #values .max {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -203,10 +192,10 @@ header ul {
 #values .descrip {
   width: 50%;
   height: 100%;
-  padding-left: 50px;
   padding: 5px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
 #values .box {
@@ -219,12 +208,14 @@ header ul {
   padding: 20px;
   z-index: 1;
   margin-right: -40%;
+  min-width: 290px;
 }
 
 #values .box-image {
   border-radius: 70px;
   height: 100%;
   width: 90%;
+  min-width: 340px;
   overflow: hidden;
   z-index: 0;
 }
@@ -253,22 +244,12 @@ header ul {
 }
 
 #values .icons {
-  width: 35%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 150px 150px 150px;
   justify-content: center;
-  align-items: center;
-}
-
-#values .icon {
-  width: 150px;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
+  width: 50%;
+  min-width: 480px;
 }
 
 #values .icon img {
@@ -282,10 +263,6 @@ header ul {
 #values .icon h4 {
   padding-top: 20px;
   text-align: center;
-}
-
-#values .bulb-mobile {
-  display: none;
 }
 /* values end */
 
@@ -312,10 +289,8 @@ header ul {
   display: flex;
   flex-direction: column;
   width: 312px;
-  /* height: 500px; */
   height: 420px;
   border-radius: 70px;
-  /* margin: 0 40px; */
   margin: auto;
   background: no-repeat;
 }
@@ -374,13 +349,13 @@ header ul {
 
 #servicios .box {
   width: 100%;
-  /* height: 356px; */
   height: 350px;
   background-color: var(--white-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 70px;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -391,7 +366,6 @@ header ul {
 }
 
 #servicios .box .text h2 {
-  /* font-size: 2.5rem; */
   font-size: 2rem;
   text-align: left;
   padding: 20px 0;
@@ -410,7 +384,6 @@ header ul {
   text-align: center;
   width: 50%;
   height: 100%;
-  /* margin: auto; */
 }
 
 #servicios .box .img img {
@@ -426,11 +399,7 @@ header ul {
 #contacto h2 {
   color: var(--blue-main);
   font-size: 4rem;
-  padding: 0 40px 60px 40px;
-  /* font-size: 2.5rem;
-  text-align: left;
-  margin-bottom: 20px;
-  color: var(--blue-main); */
+  padding: 60px 40px 60px 0;
 }
 
 #contacto .max {
@@ -439,18 +408,17 @@ header ul {
   width: 100%;
   height: 100%;
   padding: 10px 0;
-  justify-content: space-evenly;
   text-align: left;
 }
 
 #contacto .datos {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
 }
 
 #contacto .datos input {
-  width: 100%;
+  width: 80%;
   height: 30px;
   margin: 5px;
   border-radius: 5px;
@@ -467,17 +435,19 @@ header ul {
 #contacto .mensaje {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  align-items: flex-end;
+  width: 50%;
 }
 
 #contacto .mensaje textarea {
-  width: 100%;
+  width: 80%;
   height: 45%;
   margin: 5px;
   border-radius: 5px;
 }
 
 #contacto .max .mensaje label {
+  width: 80%;
   display: block;
   font-weight: bold;
   text-indent: 0.5em;
@@ -509,6 +479,7 @@ footer .max {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  max-width: 1200px;
 }
 
 footer .network {
@@ -550,13 +521,26 @@ footer .utilities a {
 /* Footer end */
 
 /* Mobile start*/
-@media (max-width: 500px) {
+@media (max-width: 760px) {
+  #landing {
+    margin-bottom: 50px;
+  }
+  
   #landing .max {
-    height: 100rem;
+    height: 100%;
+  }
+
+  #landing .descrip {
+    width: 100%;
   }
 
   #landing .max .descrip .network {
     display: flex;
+    margin-top: 100px;
+  }
+
+  #landing .intro {
+    width: 100%;
     margin-top: 100px;
   }
 
@@ -578,12 +562,10 @@ footer .utilities a {
     width: 100%;
   }
 
-  /* #values .bulb {
-    display: none;
-  } */
-
   #values .descrip {
     flex-direction: column;
+    width: 350px;
+    margin-bottom: 100px;
   }
 
   #values .box {
@@ -623,7 +605,7 @@ footer .utilities a {
 
   #servicios .descrip .box .img {
     width: 100%;
-    margin-top: 65px;
+    margin-top: 120px;
   }
 
   #servicios .descrip .box .img img {
@@ -631,7 +613,6 @@ footer .utilities a {
   }
 }
 /* Mobile end*/
-
 
 @media (max-width: 774px) {
   header i{
@@ -697,39 +678,10 @@ footer .utilities a {
   .testimonials {
     margin-top: 150px;
   } 
-
 }
 
-@media (max-width: 947px ) {
-  #landing .descrip {
-      width: 100%;
-      color: var(--white-main);
-  }
-
-  #landing .max {
-    height: 100rem;
-  }
-
-  #clientes .max .grupo_clientes {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 1142px) {
-  #values .descrip {
-      width: 100%;
-  }
-
-  #values .icons {
-      justify-content: flex-start;
-      width: 100%;
-      margin-top: 160px;
-      justify-content: center;
-  }
-}
-
-@media (min-width: 1715px) {
-  #container-one {
-    margin-top: 200px;
+@media (max-width: 1255px) {
+  #servicios .box {
+    height: 100%;
   }
 }
