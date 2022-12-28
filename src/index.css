@@ -68,10 +68,29 @@ header .max nav {
 }
 
 header .max nav a {
+  position: relative;
   text-decoration: none;
   color: var(--gray-main);
   margin: 0 15px;
   cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+
+header .max nav a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background-color: var(--blue-main);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+header .max nav a:hover::before{
+  opacity: 1;
 }
 
 header .max nav a:hover {
