@@ -23,7 +23,7 @@ export const Nosotros = forwardRef((props, ref) => {
 
 
     return (
-        <div className="container" ref={ref} style={{ backgroundImage: `url(${BgBlueImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '1240px', padding: '60px' }}>
+        <div className="container" ref={ref} style={{ backgroundImage: `url(${BgBlueImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '1240px', minHeight: '1040px' }}>
             <section id="landing">
                 <ModalCmp
                     modalIsOpen={modalIsOpen}

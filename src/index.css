@@ -112,6 +112,7 @@ header ul {
   margin-right: auto;
   overflow-x: hidden;
   margin-bottom: 150px;
+  padding: 60px;
 }
 
 #landing .max {
@@ -169,7 +170,7 @@ header ul {
 #landing .max .descrip .network {
   display: flex;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 #landing .max .descrip .network img {
@@ -179,7 +180,7 @@ header ul {
 #landing .intro {
   width: 50%;
   height: 100%;
-  min-width: 330px;
+  /* min-width: 330px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -608,6 +609,7 @@ footer .utilities a {
 @media (max-width: 760px) {
   #landing {
     margin-bottom: 50px;
+    padding: 60px 35px;
   }
   
   #landing .max {
@@ -621,12 +623,11 @@ footer .utilities a {
 
   #landing .max .descrip .network {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   #landing .intro {
     width: 100%;
-    margin-top: 100px;
   }
 
   #clientes .max .grupo_clientes {
@@ -699,7 +700,7 @@ footer .utilities a {
     /* width: 100%; */
     width: 75%;
     height: 80%;
-    border-radius: 0;
+    border-radius: 35px;
     margin: 0;
   }
 }
